@@ -1,9 +1,8 @@
 function formatMessage (message, maxLength) {
     const messageLength = message.length;
 
-    if (messageLength > maxLength) {
-        const trueAnswer = `${message.slice(0, maxLength)}...`;
-        return trueAnswer;
+    if (messageLength > maxLength) {// const trueAnswer = `${message.slice(0, maxLength)}...`;
+        return message.slice(0, maxLength) + "...";
     } else {
         return message;
     } 
